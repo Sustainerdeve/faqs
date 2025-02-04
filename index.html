@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>faq</title>
+</head>
+<body>
+    <section>
+        <h2 class="title">FAQ</h2>
+        <div class="faq">
+            <div class="question">
+                <h3>what is javaScript?</h3>
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg" class="drop-arrow"><path d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z"></path></svg> 
+            </div>
+            <div class="answer">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi iusto ullam fuga et vel ut voluptas nihil enim quod laborum voluptatem illo vero adipisci inventore id, beatae perferendis excepturi temporibus?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia illo a quas libero veniam fuga dicta suscipit, minima ducimus inventore praesentium harum voluptates earum tenetur, ipsum, ipsam natus ipsa voluptas.
+                </p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="question">
+                <h3>what is javaScript?</h3>
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg" class="drop-arrow"><path d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z"></path></svg> 
+            </div>
+            <div class="answer">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi iusto ullam fuga et vel ut voluptas nihil enim quod laborum voluptatem illo vero adipisci inventore id, beatae perferendis excepturi temporibus?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia illo a quas libero veniam fuga dicta suscipit, minima ducimus inventore praesentium harum voluptates earum tenetur, ipsum, ipsam natus ipsa voluptas.
+                </p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="question" onclick="openToogle()">
+                <h3>what is javaScript?</h3>
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg" class="drop-arrow"><path d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z"></path></svg> 
+            </div>
+            <div class="answer">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi iusto ullam fuga et vel ut voluptas nihil enim quod laborum voluptatem illo vero adipisci inventore id, beatae perferendis excepturi temporibus?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia illo a quas libero veniam fuga dicta suscipit, minima ducimus inventore praesentium harum voluptates earum tenetur, ipsum, ipsam natus ipsa voluptas.
+                </p>
+            </div>
+        </div>
+    </section>
+    <script src="script.js" >
+        const faq = document.querySelectorAll(".faq");
+
+faq.forEach(faq => {
+    faq.addEventListener("click", () => {
+        faq.classList.toggle("active");
+    });
+});
+    </script>
+</body>
+</html>
